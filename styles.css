@@ -2,15 +2,40 @@ h1 {
   color: red;
 }
 nav {
-  background-color: #13d6f0  ;
+  height: 6rem;
+  background-color: #5c5e66  ;
   border-bottom: 1px solid black;
+  font-family: "Roboto-Regular", Helvetica, Arial, sans-serif;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.items {
+  display: flex;
+  margin-right: 5rem;
+}
+.item {
+  margin: 0 2rem;
+  vertical-align: middle;
+  color: white;
+}
+.logo {
+  height: 5rem;
+  margin-left: 1rem;
+}
+.image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
-.photo {
-  background-color: #FAD7A0;
-}
 .presentation {
-  background-color: #E6B0AA;
+
+}
+.presentation h1 {
+  color: green;
 }
 .produits {
   background-color: #ABEBC6;
@@ -32,25 +57,15 @@ footer {
   background-color: #13d6f0;
 }
 
-.menus ol {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.menu {
-  display: inline-block;
-}
-
-.menu a::after {
-  display: inline-block;
-  color: #000;
-  content: '>';
-  font-size: 80%;
-  font-weight: bold;
-  padding: 0 3px;
-}
-
-body {
+.container {
   display: grid;
-  grid-template-rows: 100px 50px 150px;
+  grid-template-rows: 590px repeat(6, 450px);
+}
+@font-face {
+	font-family: "Roboto-Regular";
+  src: url('/Roboto/Roboto-Regular.ttf');
+}
+body {
+  margin: 0;
+	font-family: "Roboto-Regular", Helvetica, Arial, sans-serif;
 }
