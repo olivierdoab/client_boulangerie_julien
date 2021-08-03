@@ -1,0 +1,56 @@
+h1 {
+  color: red;
+}
+nav {
+  background-color: #13d6f0  ;
+  border-bottom: 1px solid black;
+}
+
+.photo {
+  background-color: #FAD7A0;
+}
+.presentation {
+  background-color: #E6B0AA;
+}
+.produits {
+  background-color: #ABEBC6;
+}
+.separation1_photos {
+  background-color: #FAD7A0;
+}
+.boulanger {
+  background-color: #E6B0AA;
+}
+.articles {
+  background-color: #ABEBC6;
+}
+.separation2_photos {
+  background-color: #FAD7A0;
+}
+
+footer {
+  background-color: #13d6f0;
+}
+
+.menus ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menu {
+  display: inline-block;
+}
+
+.menu a::after {
+  display: inline-block;
+  color: #000;
+  content: '>';
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 100px 50px 150px;
+}
