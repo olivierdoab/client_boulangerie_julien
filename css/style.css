@@ -1,0 +1,140 @@
+@font-face {
+	font-family: "Roboto-Light";
+  src: url('/elements/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+	font-family: "Roboto-Medium";
+  src: url('/elements/Roboto/Roboto-Medium.ttf');
+}
+
+/* body {
+	font-family: "Roboto-Light", Helvetica, Arial, sans-serif;
+}
+h1 {
+  font-family: "Roboto-Medium", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 720px 400px 250px 200px 1fr 700px 500px;
+} */
+
+/* nav {
+  height: 6rem;
+  background-color: #5c5e66  ;
+  border-bottom: 1px solid black;
+  font-family: "Roboto-Regular", Helvetica, Arial, sans-serif;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.items {
+  display: flex;
+  margin-right: 5rem;
+}
+.item {
+  margin: 0 2rem;
+  vertical-align: middle;
+  color: white;
+}
+.logo {
+  height: 5rem;
+  margin-left: 1rem;
+} */
+
+
+
+.image {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.bloc_image {
+  display: flex;    
+  overflow: hidden;
+}
+
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.presentation p {
+  width: 45rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+.produits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+.produits p {
+  display: inline-block;
+  width: 50rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+
+.produits_photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #f0f0f0;
+}
+.produits_photos img {
+  margin: 0 auto;
+  object-fit: fill;
+}
+.separation1_photos img{
+  width: 100%;
+}
+
+
+.boulanger {
+  max-width: 70rem;
+  margin:auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+}
+.boulanger_texte {
+  margin: auto 2rem;
+  text-align: center;
+}
+.boulanger_texte  p {
+  margin-bottom: 1rem;
+}
+.boulanger_photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boulanger_video {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.articles {
+  background-color: #ABEBC6;
+}
+.separation2_photos {
+  background-color: #FAD7A0;
+}
+
+footer {
+  background-color: #13d6f0;
+}
+

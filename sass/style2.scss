@@ -1,0 +1,45 @@
+@import "../sass_knacss/abstracts/variables-sass";
+body {
+  font-family: "Roboto-Medium", Helvetica, Arial, sans-serif;
+}
+// h1 {
+//   font-family: "Roboto-Medium", Helvetica, Arial, sans-serif;
+//   font-size: 2rem;
+// }
+
+
+.header {
+  background-color: rgb(105, 107, 107);
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    flex: 0 0 7rem;
+    margin: .5rem;
+  }
+}
+.nav {
+  width: 44rem;
+  padding: 0 6rem 0 1rem;
+  background-color: rgb(153, 204, 204);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: map-get($breakpoints, sm)) {
+  .nav {
+    background-color: rgb(59, 192, 18);
+  }
+  }
+  &__link {
+
+    // margin: 0 1rem 0 1rem;
+    background-color: brown;
+    &--active {
+      background-color: coral;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+.nav {
+  background-color: rgb(59, 192, 18);
+}
+}
