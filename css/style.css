@@ -6,61 +6,59 @@
   font-family: "Roboto-Medium";
   src: url("/elements/Roboto/Roboto-Medium.ttf");
 }
-body {
-  font-family: "Roboto-Medium", Helvetica, Arial, sans-serif;
-  display: grid;
-  grid-template-rows: 100px 800px 250px auto 150px auto auto 150px;
-}
-body h1 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 2rem;
-}
-body p {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-}
-
 #symbole_burger {
   color: white;
   font-size: 5rem;
   text-decoration: none;
 }
 
-.header {
+.containerPrincipal {
+  font-family: "Roboto-Medium", Helvetica, Arial, sans-serif;
+  display: grid;
+  grid-template-rows: 100px 800px 250px auto 150px auto auto 150px;
+}
+.containerPrincipal h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+}
+.containerPrincipal p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+.containerPrincipal__header {
   background-color: #565f5f;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header__logo {
+
+.menu__logo {
   flex: 0 0 7rem;
   margin-left: 1rem;
 }
-.header__nav {
+.menu__nav {
   width: 40rem;
   margin-right: 8%;
   flex: initial;
+  display: flex;
+  justify-content: space-between;
 }
 @media screen and (max-width: 992px) {
-  .header__nav {
+  .menu__nav {
     background-color: #8568ec;
     margin-right: 3%;
   }
 }
 @media screen and (max-width: 662px) {
-  .header__nav {
+  .menu__nav {
     background-color: #e01e79;
   }
 }
-.header .menu {
-  display: flex;
-  justify-content: space-between;
-}
-.header .menu__link {
+.menu__link {
   color: white;
   text-decoration: none;
 }
-.header .menu__link:hover {
+.menu__link:hover {
   color: wheat;
   text-decoration: none;
 }
