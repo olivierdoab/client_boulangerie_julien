@@ -4,80 +4,116 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="css/style.css" rel="stylesheet"  type="text/css"> -->
   <link href="css/knacss.css" rel="stylesheet" type="text/css">
-  <link href="css/style.css" rel="stylesheet"  type="text/css">
-  <link href="css/style2.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
   <title>Boulangerie Julien</title>
 </head>
 
-<body>
-  <header class="header">
+<body class="container">
+  <!-- <header class="header">
     <img class="header__logo" src="/elements/logogris.png" alt="logo boulangerie">
-    <nav class="nav">
-        <p class="nav__link nav__link--active">Chez Julien</p>
-        <p class="nav__link">Nos produits</p>
-        <p class="nav__link">Nos boulangeries</p>
-        <p class="nav__link">A propos</p>
-    </nav> 
+    <nav class="header__nav"> -->
+      <!-- code &#x2630; "trigramme du ciel" -->
+      <!-- <a id="symbole_burger">&#x2630;</a> -->
+      <!-- <ul class="menu">
+        <li><a class="menu__link" href="#">Chez Julien</a></li>
+        <li><a class="menu__link" href="#">Nos produits</a></li>
+        <li><a class="menu__link" href="#">Nos boulangeries</a></li>
+        <li><a class="menu__link" href="#">&Agrave; propos</a></li>
+      </ul>
+    </nav>
+  </header> -->
+
+  <!-- <header class="container__header"> -->
+    <header  class="header">
+    <img class="header__logo" src="/elements/logogris.png" alt="logo boulangerie">
+    <nav class="header__nav">
+      <!-- code &#x2630; "trigramme du ciel" -->
+      <!-- <a id="symbole_burger">&#x2630;</a> -->
+      <ul class="menu">
+        <li><a class="menu__link" href="#">Chez Julien</a></li>
+        <li><a class="menu__link" href="#">Nos produits</a></li>
+        <li><a class="menu__link" href="#">Nos boulangeries</a></li>
+        <li><a class="menu__link" href="#">&Agrave; propos</a></li>
+      </ul>
+    </nav>
   </header>
-  <!-- <section class="grid">
 
-    <section class="bloc_image">
-      <img class="image" src="/elements/photo_pain2.png" alt="photo pain">
-    </section>
 
-      <section class="presentation">
+
+  <section>
+      <img class="photo_principale" src="/elements/photo_pain2.png" alt="photo de pain">
+  </section>
+
+  <section class="inspiration">
+    <div>
       <h1>Retour aux sources</h1>
       <p>Un bon pain c’est tout d’abord un bon partenariat avec son meunier qui saura apporter des farines de qualité, mais c’est aussi le temps de travail avec de bons levains.</p>
       <p>Nous avons à cœur de créer et de réaliser des recettes respectueuses de l’environnement pour vous proposer une variété de pains,  allant des grands classiques aux plus spécifiques en passant par des pains Bio</p>
-    </section>
+    </div>
+  </section>
 
-    <section class="produits">
+  <section class="produit">
+    <div class="produit__texte">
       <h1>Nos Produits</h1>
       <p>Chacune des rubriques représentent les catégories de nos confections et réalisations artisanales, Tous nos créations sont réalisés avec des ingrédients minutieusement choisis et respectueux de nos valeurs. (Farine Bio, Farine CRC, Beurre AOP, fruits frais, graines Bio…)</p>
-    </section>
-
-    <section class="produits_photos">
+    </div>
+    <div class="produit__galerie">
       <img src="/elements/produit1.png" alt="photo pain">
       <img src="/elements/produit2.png" alt="photo pain">
       <img src="/elements/produit3.png" alt="photo pain">
       <img src="/elements/produit4.png" alt="photo pain">
-      </section>
-    
-    <section class="separation1_photos">
-      <img src="/elements/bande_photos1.png" alt="photo pain">
-    </section>
+    </div>
+  </section>
 
-    <section class="boulanger">
-      <div class="boulanger_texte">
+  <section class="separation_photos">
+    <img src="/elements/bande_photos1.png" alt="photo pain">
+  </section>
+
+  <section class="presentation">
+    <div class="presentation__detail">
+      <div>
         <h1>Julien, l’art de la boulangerie</h1>
         <p>Créateur d’envie, de satisfaction et de saveur, il s’efforce de dépasser le cadre de l’artisanat en intégrant l’entreprise dans le monde moderne.</p>
         <p>« Tradition d’avenir », c’est son maître mot. Apporter de la qualité et un service tout en conservant des prix à la portée de tous.</p>
         <p>Pour Mathieu et pour toute son équipe, la boulangerie et la pâtisserie sont les plus beaux métiers du monde dans leur culture de saveur et de partage.</p> 
       </div>
-      <div class="boulanger_photo">
-        <img src="/elements/photo_boulanger.png" alt="photo pain">
-      </div>
-      <div class="boulanger_video">
-        <video src="/elements/video.mov" alt="photo pain">
-      </div>
-    </section>
+      <img src="/elements/photo_boulanger.png" alt="photo pain">
+    </div>
+    <div class="presentation__video">
+      <video src="/elements/video.mov" alt="photo pain">
+    </div>
+  </section>
 
-      <section class="articles">
-      <h1>Nos articles</h1>
-      <img src="/elements/photo_article1.png" alt="photo pain">
-      <h2>La Bruschetta façon Julien</h2>
-      <p>Une recette d'été à partager pour l'apéritif ! [...]</p>
-      <img src="/elements/photo_article2.png" alt="photo pain">
-      <h2>Nos boulangeries fêtent leurs 10 ans</h2>
-      <p>Mathieu est un jeune homme passionné par son métier [...]</p>
-      <img src="/elements/photo_article3.png" alt="photo pain">
-      <h2>Vos pains gourmands riches en fibres</h2>
-      <p>Quel pain choisir pour votre rééquilibrage alimentaire ? [...]</p>
-    </section>
-    <section class="separation2_photos">
-      <img src="/elements/bande_photos2.png" alt="photo pain">
-    </section>
+  <section class="articles">
+    <h1 class="articles__titre">Nos articles</h1>
+    <div class="articles__bloc">
+
+
+      <article class="article">
+        <img class="article__image" src="/elements/photo_article1.png" alt="photo pain">
+        <h2 class="article__titre">La Bruschetta façon Julien</h2>
+        <p class="article__texte">Une recette d'été à partager pour l'apéritif ! [...]</p>
+      </article>
+
+
+
+      <article>
+        <img src="/elements/photo_article2.png" alt="photo pain">
+        <h2>Nos boulangeries fêtent leurs 10 ans</h2>
+        <p>Mathieu est un jeune homme passionné par son métier [...]</p>
+      </article>
+      <article>
+        <img src="/elements/photo_article3.png" alt="photo pain">
+        <h2>Vos pains gourmands riches en fibres</h2>
+        <p>Quel pain choisir pour votre rééquilibrage alimentaire ? [...]</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="separation_photos">
+    <img src="/elements/bande_photos2.png" alt="photo pain">
   </section>
 
   <footer>
