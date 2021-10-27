@@ -8,34 +8,71 @@
 	font-family: "Roboto-Medium";
   src: url('/elements/Roboto/Roboto-Medium.ttf');
 }
+
+// html { font-size: 62.5%; }   // de base 1rem = 16pixels
+* { box-sizing: border-box; }
+body, div {
+  margin: 0; padding: 0;
+}
+img {
+  display: block;   // les images ne seront plus disposées côte à côte (évite le liseré de 3px en bas)
+}
+
 #symbole_burger {
   color: white;
   font-size: 5rem;
   text-decoration: none;
 }
-.containerPrincipal {
+.container {
   font-family: "Roboto-Medium", Helvetica, Arial, sans-serif;
-  display: grid;
-  grid-template-rows: 100px 800px 250px auto 150px auto auto 150px;
+  text-align: center;
   h1 {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 2rem;
+    margin: auto;
+    padding: 1rem;
   }
   p {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1rem;
+    margin: auto;
+    padding: 0 1rem 1rem;
+    max-width: 40rem;
   }
   &__header {
     background-color: rgb(86, 95, 95);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+  }
+  &__accroche-photo {
+    object-fit: cover;
+    width: 100%;
+  }
+  &__produits {
+    background-color: rgb(230, 230, 230);
+    
+  }
+  &__separation {
+    > img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__presentation {
+    padding: 1rem 0;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 .menu {
   &__logo {
-    flex: 0 0 7rem;
-    margin-left: 1rem;
+    flex-basis: 7rem;   // flex initial => flex: 0 1 auto; (flex-shrink prioritaire sur flex-basis)
+    margin: .5rem;
   }
   &__nav {
     width: 40rem;
@@ -60,30 +97,12 @@
     }
   }
 }
-.photo_principale {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-.inspiration {
-  display: flex;;
-  div {
-    margin:  2rem  auto;
-    max-width: 50rem;
-    text-align: center;
-  }
-}
 .produit {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(230, 230, 230);
   &__texte {
     margin: 2rem auto;
     max-width: 50rem;
-    text-align: center;
   }
-  &__galerie {
-    margin-bottom: 2rem;
+  &__photo {
     display: flex;
     justify-content: center;
     align-content: space-between;
@@ -93,20 +112,7 @@
     }
   }
 }
-.separation_photos {
-  > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
 .presentation {
-  padding: 1rem 0;
-  background-color: blanchedalmond;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   &__detail {
     margin: 1rem;
     max-width: 45rem;
@@ -117,8 +123,7 @@
     > div {
       flex: initial;
       min-width: 20rem;
-      max-width: 30rem;
-      text-align: center;      
+      max-width: 30rem;     
     }
     > img {
       margin: 2rem;
@@ -130,17 +135,69 @@
     margin: 1rem;
   }
 }
-
-.articles {
-  background-color: aquamarine;
-  &__titre {
-    background-color: bisque;
+.article {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  article {
+    width: 20rem;
+    height: 25rem;
+    margin: 1rem;
+    border: 1px solid gainsboro;
   }
-  &__liste {
-    background-color: blueviolet;
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  &__titre {
+    padding: 1rem 2rem;
+  }
+  &__paragraphe {
+    padding: 0 .5rem;
   }
 }
-
-footer {
-  background-color: greenyellow;
+.contact {
+  padding: 1rem;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+  &__adresse {
+    // background-color: blanchedalmond;
+    padding: 1rem;
+  }
+  &__plan {
+    // background-color: chocolate;
+    display: flex;
+    padding: 1rem;
+    img {
+      margin: auto;
+    }
+  }
+  &__numerique {
+    // background-color: coral;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    h2 {
+      margin-top: auto;
+      color: white;
+    }
+  }
+}
+.coordonnees {
+  // background-color: crimson;
+  &__postal {
+    // background-color: darkgoldenrod;
+  }
+  &__telephonique {
+    // background-color: darksalmon;
+  }
+}
+.mention {
+  min-height: 2rem;
+  background-color: black;
+  color:white;
 }

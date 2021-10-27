@@ -16,17 +16,18 @@
 			// 		"format": "compressed",
 			// 		"savePath": "/dist/css"
 			// }
-	],
-	"liveSassCompile.settings.excludeList": [
-		 "**/node_modules/**",
-		 ".vscode/**"
-	],
-	"liveSassCompile.settings.generateMap": true,
-	"liveSassCompile.settings.autoprefix": [
-			"defaults"
-	],
-	"files.exclude": {
-    "maquette/": true
-	}
+		],
+		"liveSassCompile.settings.excludeList": [
+			"**/node_modules/**",
+			".vscode/**"
+		],
+		"liveSassCompile.settings.generateMap": true,
+		"liveSassCompile.settings.autoprefix": [
+				"defaults"
+		],
+		"files.exclude": {
+			"maquette/": true
+		},
+		"liveSassCompile.settings.showOutputWindowOn": "None"
 	}
 }

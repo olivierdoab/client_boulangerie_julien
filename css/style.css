@@ -6,35 +6,73 @@
   font-family: "Roboto-Medium";
   src: url("/elements/Roboto/Roboto-Medium.ttf");
 }
+* {
+  box-sizing: border-box;
+}
+
+body, div {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 #symbole_burger {
   color: white;
   font-size: 5rem;
   text-decoration: none;
 }
 
-.containerPrincipal {
+.container {
   font-family: "Roboto-Medium", Helvetica, Arial, sans-serif;
-  display: grid;
-  grid-template-rows: 100px 800px 250px auto 150px auto auto 150px;
+  text-align: center;
 }
-.containerPrincipal h1 {
+.container h1 {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 2rem;
+  margin: auto;
+  padding: 1rem;
 }
-.containerPrincipal p {
+.container p {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1rem;
+  margin: auto;
+  padding: 0 1rem 1rem;
+  max-width: 40rem;
 }
-.containerPrincipal__header {
+.container__header {
   background-color: #565f5f;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.container__accroche-photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.container__produits {
+  background-color: #e6e6e6;
+}
+.container__separation > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container__presentation {
+  padding: 1rem 0;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 .menu__logo {
-  flex: 0 0 7rem;
-  margin-left: 1rem;
+  flex-basis: 7rem;
+  margin: 0.5rem;
 }
 .menu__nav {
   width: 40rem;
@@ -63,58 +101,20 @@
   text-decoration: none;
 }
 
-.photo_principale {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.inspiration {
-  display: flex;
-}
-.inspiration div {
-  margin: 2rem auto;
-  max-width: 50rem;
-  text-align: center;
-}
-
-.produit {
-  display: flex;
-  flex-direction: column;
-  background-color: #e6e6e6;
-}
 .produit__texte {
   margin: 2rem auto;
   max-width: 50rem;
-  text-align: center;
 }
-.produit__galerie {
-  margin-bottom: 2rem;
+.produit__photo {
   display: flex;
   justify-content: center;
   align-content: space-between;
   flex-wrap: wrap;
 }
-.produit__galerie > img {
+.produit__photo > img {
   margin: 0 1rem 2rem;
 }
 
-.separation_photos > img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.presentation {
-  padding: 1rem 0;
-  background-color: blanchedalmond;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
 .presentation__detail {
   margin: 1rem;
   max-width: 45rem;
@@ -127,7 +127,6 @@
   flex: initial;
   min-width: 20rem;
   max-width: 30rem;
-  text-align: center;
 }
 .presentation__detail > img {
   margin: 2rem;
@@ -138,16 +137,59 @@
   margin: 1rem;
 }
 
-.articles {
-  background-color: aquamarine;
+.article {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.articles__titre {
-  background-color: bisque;
+.article article {
+  width: 20rem;
+  height: 25rem;
+  margin: 1rem;
+  border: 1px solid gainsboro;
 }
-.articles__liste {
-  background-color: blueviolet;
+.article__image {
+  width: 100%;
+  height: auto;
+}
+.article__titre {
+  padding: 1rem 2rem;
+}
+.article__paragraphe {
+  padding: 0 0.5rem;
 }
 
-footer {
-  background-color: greenyellow;
+.contact {
+  padding: 1rem;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+}
+.contact__adresse {
+  padding: 1rem;
+}
+.contact__plan {
+  display: flex;
+  padding: 1rem;
+}
+.contact__plan img {
+  margin: auto;
+}
+.contact__numerique {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+.contact__numerique h2 {
+  margin-top: auto;
+  color: white;
+}
+
+.mention {
+  min-height: 2rem;
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
