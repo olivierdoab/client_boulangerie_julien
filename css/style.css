@@ -1,12 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Roboto-Light";
-  src: url("/elements/Roboto/Roboto-Light.ttf");
-}
-@font-face {
-  font-family: "Roboto-Medium";
-  src: url("/elements/Roboto/Roboto-Medium.ttf");
-}
 * {
   box-sizing: border-box;
 }
@@ -26,8 +18,64 @@ img {
   text-decoration: none;
 }
 
+header {
+  background-color: #565f5f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  flex-basis: 7rem;
+  margin: 0.5rem;
+}
+header .menu {
+  background-color: greenyellow;
+  padding-right: 3rem;
+  display: flex;
+  list-style-type: none;
+}
+header .menu a {
+  display: block;
+  padding: 0 50px;
+  text-decoration: none;
+  color: red;
+}
+header .menu a:hover {
+  background-color: #e6e6e6;
+}
+@media screen and (max-width: 992px) {
+  header .menu {
+    background-color: #8568ec;
+    margin-right: 3%;
+  }
+}
+@media screen and (max-width: 662px) {
+  header .menu {
+    background-color: #e01e79;
+  }
+}
+
 body {
   background-color: #F5F5F5;
+}
+
+footer {
+  text-align: center;
+}
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  margin: auto;
+  padding: 0 1rem 1rem;
+  max-width: 40rem;
 }
 
 .global {
@@ -35,30 +83,12 @@ body {
   max-width: 1200px;
   margin: auto;
   background-color: white;
+  border: 1px solid gainsboro;
 }
 
 .container {
   font-family: "Roboto-Medium", Helvetica, Arial, sans-serif;
   text-align: center;
-}
-.container h1 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 2rem;
-  margin: auto;
-  padding: 2rem;
-}
-.container p {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  margin: auto;
-  padding: 0 1rem 1rem;
-  max-width: 40rem;
-}
-.container__header {
-  background-color: #565f5f;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .container__accroche-photo {
   -o-object-fit: cover;
@@ -80,37 +110,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.menu__logo {
-  flex-basis: 7rem;
-  margin: 0.5rem;
-}
-.menu__nav {
-  width: 40rem;
-  margin-right: 8%;
-  flex: initial;
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 992px) {
-  .menu__nav {
-    background-color: #8568ec;
-    margin-right: 3%;
-  }
-}
-@media screen and (max-width: 662px) {
-  .menu__nav {
-    background-color: #e01e79;
-  }
-}
-.menu__link {
-  color: white;
-  text-decoration: none;
-}
-.menu__link:hover {
-  color: wheat;
-  text-decoration: none;
 }
 
 .produit__texte {

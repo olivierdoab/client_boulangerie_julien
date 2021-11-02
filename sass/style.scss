@@ -1,15 +1,6 @@
 @charset "utf-8";
 @import "../sass/knacss/abstracts/variables-sass";
 
-@font-face {
-	font-family: "Roboto-Light";
-  src: url('/elements/Roboto/Roboto-Light.ttf');
-}
-@font-face {
-	font-family: "Roboto-Medium";
-  src: url('/elements/Roboto/Roboto-Medium.ttf');
-}
-
 // html { font-size: 62.5%; }   // de base 1rem = 16pixels
 * { box-sizing: border-box; }
 body, div, ul {
@@ -23,37 +14,67 @@ img {
   font-size: 5rem;
   text-decoration: none;
 }
+header {
+  background-color: rgb(86, 95, 95);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    flex-basis: 7rem;   // flex initial => flex: 0 1 auto; (flex-shrink prioritaire sur flex-basis)
+    margin: .5rem;
+  }
+  .menu {
+    background-color: greenyellow;
+    padding-right: 3rem;
+    display: flex;
+    list-style-type: none;
+      a {
+        display: block;
+        padding: 0 50px;
+        text-decoration: none;
+        color: red;
+        &:hover {
+          background-color: rgb(230, 230, 230);
+        }
+    }
+    @media screen and (max-width: $medium) {
+      background-color: rgb(133, 104, 236);
+      margin-right: 3%;
+    }
+    @media screen and (max-width: $small) {
+      background-color: rgb(224, 30, 121);
+    }
+  }
+}
+
 body {
   background-color: #F5F5F5;
+}
+footer {
+  text-align: center;
+}
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  margin: auto;
+  padding: 2rem;
+}
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  margin: auto;
+  padding: 0 1rem 1rem;
+  max-width: 40rem;
 }
 .global { /* La page est centrée et limitée en largeur */
   max-width: 1200px;
   margin: auto;
   background-color: white;
+  border: 1px solid gainsboro;
 }
 .container {
   font-family: "Roboto-Medium", Helvetica, Arial, sans-serif;
   text-align: center;
-  h1 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 2rem;
-    margin: auto;
-    padding: 2rem;
-  }
-  p {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    margin: auto;
-    padding: 0 1rem 1rem;
-    max-width: 40rem;
-  }
-  &__header {
-    background-color: rgb(86, 95, 95);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-  }
   &__accroche-photo {
     object-fit: cover;
     width: 100%;
@@ -77,34 +98,7 @@ body {
     flex-wrap: wrap;
   }
 }
-.menu {
-  &__logo {
-    flex-basis: 7rem;   // flex initial => flex: 0 1 auto; (flex-shrink prioritaire sur flex-basis)
-    margin: .5rem;
-  }
-  &__nav {
-    width: 40rem;
-    margin-right: 8%;
-    flex: initial;
-    display: flex;
-    justify-content: space-between;
-    @media screen and (max-width: $medium) {
-      background-color: rgb(133, 104, 236);
-      margin-right: 3%;
-    }
-    @media screen and (max-width: $small) {
-      background-color: rgb(224, 30, 121);
-    }
-  }
-  &__link {
-    color: white;
-    text-decoration: none;
-    &:hover {
-      color: wheat;
-      text-decoration: none;
-    }
-  }
-}
+
 .produit {
   &__texte {
     margin: 2rem auto;
