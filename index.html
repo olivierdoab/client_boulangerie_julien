@@ -9,120 +9,121 @@
   <title>Boulangerie Julien</title>
 </head>
 
-<body class="container">
+<body>
+  <div class="global container">
+    <header class="container__header menu">
+      <img class="menu__logo" src="/elements/logogris.png" alt="logo boulangerie">
+      <nav class="menu__nav">
+        <!-- code &#x2630; "trigramme du ciel" -->
+        <!-- <a id="symbole_burger">&#x2630;</a> -->
+        <a class="menu__link" href="#">Chez Julien</a>
+        <a class="menu__link" href="#">Nos produits</a>
+        <a class="menu__link" href="#">Nos boulangeries</a>
+        <a class="menu__link" href="#">&Agrave; propos</a>
+      </nav>
+    </header>
 
-  <header class="container__header menu">
-    <img class="menu__logo" src="/elements/logogris.png" alt="logo boulangerie">
-    <nav class="menu__nav">
-      <!-- code &#x2630; "trigramme du ciel" -->
-      <!-- <a id="symbole_burger">&#x2630;</a> -->
-      <a class="menu__link" href="#">Chez Julien</a>
-      <a class="menu__link" href="#">Nos produits</a>
-      <a class="menu__link" href="#">Nos boulangeries</a>
-      <a class="menu__link" href="#">&Agrave; propos</a>
-    </nav>
-  </header>
+    <img class="container__accroche-photo" src="/elements/photo_pain2.png" alt="photo de pain">
 
-  <img class="container__accroche-photo" src="/elements/photo_pain2.png" alt="photo de pain">
+    <section class="container__inspiration">
+        <h1>Retour aux sources</h1>
+        <p>Un bon pain c’est tout d’abord un bon partenariat avec son meunier qui saura apporter des farines de qualité, mais c’est aussi le temps de travail avec de bons levains.</p>
+        <p>Nous avons à cœur de créer et de réaliser des recettes respectueuses de l’environnement pour vous proposer une variété de pains,  allant des grands classiques aux plus spécifiques en passant par des pains Bio</p>
+    </section>
 
-  <section class="container__inspiration">
-      <h1>Retour aux sources</h1>
-      <p>Un bon pain c’est tout d’abord un bon partenariat avec son meunier qui saura apporter des farines de qualité, mais c’est aussi le temps de travail avec de bons levains.</p>
-      <p>Nous avons à cœur de créer et de réaliser des recettes respectueuses de l’environnement pour vous proposer une variété de pains,  allant des grands classiques aux plus spécifiques en passant par des pains Bio</p>
-  </section>
-
-  <section class="container__produits produit">
-    <div class="produit__texte">
-      <h1>Nos Produits</h1>
-      <p>Chacune des rubriques représentent les catégories de nos confections et réalisations artisanales, Tous nos créations sont réalisés avec des ingrédients minutieusement choisis et respectueux de nos valeurs. (Farine Bio, Farine CRC, Beurre AOP, fruits frais, graines Bio…)</p>
-    </div>
-    <div class="produit__photo">
-      <img src="/elements/produit1.png" alt="photo pain">
-      <img src="/elements/produit2.png" alt="photo pain">
-      <img src="/elements/produit3.png" alt="photo pain">
-      <img src="/elements/produit4.png" alt="photo pain">
-    </div>
-  </section>
-
-  <section class="container__separation">
-    <img src="/elements/bande_photos1.png" alt="photo pain">
-  </section>
-
-  <section class="container__presentation presentation">
-    <div class="presentation__detail">
-      <div>
-        <h1>Julien, l’art de la boulangerie</h1>
-        <p>Créateur d’envie, de satisfaction et de saveur, il s’efforce de dépasser le cadre de l’artisanat en intégrant l’entreprise dans le monde moderne.</p>
-        <p>« Tradition d’avenir », c’est son maître mot. Apporter de la qualité et un service tout en conservant des prix à la portée de tous.</p>
-        <p>Pour Mathieu et pour toute son équipe, la boulangerie et la pâtisserie sont les plus beaux métiers du monde dans leur culture de saveur et de partage.</p> 
+    <section class="container__produits produit">
+      <div class="produit__texte">
+        <h1>Nos Produits</h1>
+        <p>Chacune des rubriques représentent les catégories de nos confections et réalisations artisanales, Tous nos créations sont réalisés avec des ingrédients minutieusement choisis et respectueux de nos valeurs. (Farine Bio, Farine CRC, Beurre AOP, fruits frais, graines Bio…)</p>
       </div>
-      <img src="/elements/photo_boulanger.png" alt="photo pain">
-    </div>
-    <div class="presentation__video">
-      <video src="/elements/video.mov" alt="photo pain">
-    </div>
-  </section>
-
-  <section class="articles">
-    <h1 class="articles__titre">Nos articles</h1>
-    <div class="articles__list article">
-
-      <article>
-        <img class="article__image" src="/elements/photo_article1.png" alt="photo pain">
-        <h2 class="article__titre">La Bruschetta façon Julien</h2>
-        <p class="article__paragraphe">Une recette d'été à partager pour l'apéritif ! [...]</p>
-      </article>
-
-      <article>
-        <img class="article__image" src="/elements/photo_article2.png" alt="photo pain">
-        <h2 class="article__titre">Nos boulangeries fêtent leurs 10 ans</h2>
-        <p class="article__paragraphe">Mathieu est un jeune homme passionné par son métier [...]</p>
-      </article>
-
-      <article>
-        <img class="article__image" src="/elements/photo_article3.png" alt="photo pain">
-        <h2 class="article__titre">Vos pains gourmands riches en fibres</h2>
-        <p class="article__paragraphe">Quel pain choisir pour votre rééquilibrage alimentaire ? [...]</p>
-      </article>
-
-    </div>
-    <h2 class="articles__bouton">VOIR PLUS D'ARTICLES</h2>
-  </section>
-
-  <section class="container__separation">
-    <img src="/elements/bande_photos2.png" alt="photo pain">
-  </section>
-
-  <footer>
-    <section class="contact">
-      <div class="contact__adresse">
-        <div class="coordonnees">
-          <p class="coordonnees__postal">62 Rue du Cheval bleu, 62000 Arras</p>
-          <p class="coordonnees__telephonique"> 03 21 55 66 17</p>
-        </div>
-        <div class="coordonnees">
-          <p class="coordonnees__postal">15 Rue du Général Pimpon, 62410 Saint-Pol</p>
-          <p class="coordonnees__telephonique"> 09 71 97 54 00</p>
-        </div>
-        <div class="coordonnees">
-          <p class="coordonnees__postal">LES JUSTINES, 14 av. Pierre Jacques, 62400 Aubigny</p>
-          <p class="coordonnees__telephonique"> 03 21 63 14 44</p>
-        </div>
-      </div>
-      <div class="contact__plan">
-        <img src="/elements/plan.png" alt="photo pain">
-      </div>
-      <div class="contact__numerique">
-        <p>Email :</p>
-        <p>contact@laboulangeriejulien.com</p>
-        <h2>RÉSEAUX SOCIAUX</h2>
-        <p>icones</p>
+      <div class="produit__photo">
+        <img src="/elements/produit1.png" alt="photo pain">
+        <img src="/elements/produit2.png" alt="photo pain">
+        <img src="/elements/produit3.png" alt="photo pain">
+        <img src="/elements/produit4.png" alt="photo pain">
       </div>
     </section>
-    <section class="mention">
-      <p>Règlement du jeu "Concours photo" | Mentions Légales | Confidentialité | A propos des cookies
-      La Boulangerie Julien | © Tous droits réservés | Maintenu par Pink2Peak.fr</p>
+
+    <section class="container__separation">
+      <img src="/elements/bande_photos1.png" alt="photo pain">
     </section>
-  </footer>
+
+    <section class="container__presentation presentation">
+      <div class="presentation__detail">
+        <div>
+          <h1>Julien, l’art de la boulangerie</h1>
+          <p>Créateur d’envie, de satisfaction et de saveur, il s’efforce de dépasser le cadre de l’artisanat en intégrant l’entreprise dans le monde moderne.</p>
+          <p>« Tradition d’avenir », c’est son maître mot. Apporter de la qualité et un service tout en conservant des prix à la portée de tous.</p>
+          <p>Pour Mathieu et pour toute son équipe, la boulangerie et la pâtisserie sont les plus beaux métiers du monde dans leur culture de saveur et de partage.</p> 
+        </div>
+        <img src="/elements/photo_boulanger.png" alt="photo pain">
+      </div>
+      <div class="presentation__video">
+        <video src="/elements/video.mov" alt="photo pain">
+      </div>
+    </section>
+
+    <section class="articles">
+      <h1 class="articles__titre">Nos articles</h1>
+      <div class="articles__list article">
+
+        <article>
+          <img class="article__image" src="/elements/photo_article1.png" alt="photo pain">
+          <h2 class="article__titre">La Bruschetta façon Julien</h2>
+          <p class="article__paragraphe">Une recette d'été à partager pour l'apéritif ! [...]</p>
+        </article>
+
+        <article>
+          <img class="article__image" src="/elements/photo_article2.png" alt="photo pain">
+          <h2 class="article__titre">Nos boulangeries fêtent leurs 10 ans</h2>
+          <p class="article__paragraphe">Mathieu est un jeune homme passionné par son métier [...]</p>
+        </article>
+
+        <article>
+          <img class="article__image" src="/elements/photo_article3.png" alt="photo pain">
+          <h2 class="article__titre">Vos pains gourmands riches en fibres</h2>
+          <p class="article__paragraphe">Quel pain choisir pour votre rééquilibrage alimentaire ? [...]</p>
+        </article>
+
+      </div>
+      <h2 class="articles__bouton">VOIR PLUS D'ARTICLES</h2>
+    </section>
+
+    <section class="container__separation">
+      <img src="/elements/bande_photos2.png" alt="photo pain">
+    </section>
+
+    <footer>
+      <section class="contact">
+        <div class="contact__adresse">
+          <div class="coordonnees">
+            <p class="coordonnees__postal">62 Rue du Cheval bleu, 62000 Arras</p>
+            <p class="coordonnees__telephonique"> 03 21 55 66 17</p>
+          </div>
+          <div class="coordonnees">
+            <p class="coordonnees__postal">15 Rue du Général Pimpon, 62410 Saint-Pol</p>
+            <p class="coordonnees__telephonique"> 09 71 97 54 00</p>
+          </div>
+          <div class="coordonnees">
+            <p class="coordonnees__postal">LES JUSTINES, 14 av. Pierre Jacques, 62400 Aubigny</p>
+            <p class="coordonnees__telephonique"> 03 21 63 14 44</p>
+          </div>
+        </div>
+        <div class="contact__plan">
+          <img src="/elements/plan.png" alt="photo pain">
+        </div>
+        <div class="contact__numerique">
+          <p>Email :</p>
+          <p>contact@laboulangeriejulien.com</p>
+          <h2>RÉSEAUX SOCIAUX</h2>
+          <p>icones</p>
+        </div>
+      </section>
+      <section class="mention">
+        <p>Règlement du jeu "Concours photo" | Mentions Légales | Confidentialité | A propos des cookies
+        La Boulangerie Julien | © Tous droits réservés | Maintenu par Pink2Peak.fr</p>
+      </section>
+    </footer>
+  </div>
 </body>
 </html>

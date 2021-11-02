@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roboto-Light";
   src: url("/elements/Roboto/Roboto-Light.ttf");
@@ -10,7 +11,7 @@
   box-sizing: border-box;
 }
 
-body, div {
+body, div, ul {
   margin: 0;
   padding: 0;
 }
@@ -25,6 +26,17 @@ img {
   text-decoration: none;
 }
 
+body {
+  background-color: #F5F5F5;
+}
+
+.global {
+  /* La page est centrée et limitée en largeur */
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+}
+
 .container {
   font-family: "Roboto-Medium", Helvetica, Arial, sans-serif;
   text-align: center;
@@ -33,7 +45,7 @@ img {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 2rem;
   margin: auto;
-  padding: 1rem;
+  padding: 2rem;
 }
 .container p {
   font-family: Helvetica, Arial, sans-serif;
